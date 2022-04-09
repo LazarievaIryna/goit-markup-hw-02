@@ -8,8 +8,9 @@
   --second-hover-btn-color: #188ce8;
   --team-bcg-color: #f5f4fa;
   --second-bcg-color: #2f303a;
+  --address-color: rgba(255, 255, 255, 0.6);
 }
-}
+
 body {
   font-family: "Roboto", Arial, sans-serif;
 }
@@ -44,8 +45,13 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+.header-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 .main-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -68,10 +74,6 @@ body {
   color: var(--header-logo-color);
 }
 .header-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--main-title-color);
 }
 .header-link:hover,
@@ -82,10 +84,6 @@ body {
   color: var(--accent-color);
 }
 .header-contacts-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
 .header-contacts-link:hover,
@@ -113,6 +111,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--hero-title-color);
+  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -169,11 +168,11 @@ body {
 }
 .address-mail {
   font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-color);
 }
 .address-tel {
   font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-color);
 }
 .address-mail:hover,
 .address-mail:focus,
@@ -192,6 +191,7 @@ body {
 }
 .btn {
   background-color: var(--team-bcg-color);
+  cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
@@ -213,7 +213,6 @@ body {
   color: var(--main-title-color);
 }
 .portfolio-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
