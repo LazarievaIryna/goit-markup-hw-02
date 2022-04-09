@@ -111,7 +111,6 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--hero-title-color);
-  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
