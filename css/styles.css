@@ -1,3 +1,15 @@
+:root {
+  --hero-title-color: #ffffff;
+  --main-bcg-color: #ffffff;
+  --accent-color: #2196f3;
+  --header-logo-color: #000000;
+  --main-title-color: #212121;
+  --main-text-color: #757575;
+  --second-hover-btn-color: #188ce8;
+  --team-bcg-color: #f5f4fa;
+  --second-bcg-color: #2f303a;
+}
+}
 body {
   font-family: "Roboto", Arial, sans-serif;
 }
@@ -38,42 +50,51 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.team-text-bottom {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
 
 /* ---------------------HEADER--------------------- */
+.header {
+  background-color: var(--main-bcg-color);
+}
 .header-logo {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .header-logo-second {
-  color: #000000;
+  color: var(--header-logo-color);
 }
 .header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-title-color);
 }
 .header-link:hover,
 .header-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .header-contacts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--main-text-color);
 }
 .header-contacts-link:hover,
 .header-contacts-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* ---------------------HERO--------------------- */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--second-bcg-color);
 }
 .hero-title {
   font-weight: 900;
@@ -82,7 +103,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--hero-title-color);
 }
 .hero-btn {
   background-color: #2196f3;
@@ -91,12 +112,12 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--hero-title-color);
 }
 .hero-btn:hover,
 .hero-btn:focus {
   cursor: pointer;
-  background-color: #188ce8;
+  background-color: var(--second-hover-btn-color);
 }
 
 /* ---------------------ADVANTAGES--------------------- */
@@ -106,50 +127,45 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--main-title-color);
 }
 .advantages-text {
-  color: #757575;
+  color: var(--main-text-color);
 }
 /* ---------------------ABOUT--------------------- */
 .about-title {
-  color: #212121;
+  color: var(--main-title-color);
 }
 
 /* ---------------------TEAM--------------------- */
+.team {
+  background-color: var(--team-bcg-color);
+}
 .team-title {
-  color: #212121;
+  color: var(--main-title-color);
 }
 .team-member {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #212121;
+  color: var(--main-title-color);
 }
 .team-position {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #757575;
+  color: var(--main-text-color);
 }
 /* ---------------------FOOTER--------------------- */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--second-bcg-color);
 }
 .footer-logo {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .footer-logo-part {
-  color: #ffffff;
+  color: var(--hero-title-color);
 }
 .address-text {
   font-style: normal;
-  color: #ffffff;
+  color: var(--hero-title-color);
 }
 .address-mail {
   font-style: normal;
@@ -163,7 +179,7 @@ body {
 .address-mail:focus,
 .address-tel:hover,
 .address-tel:focus {
-  color: #ffffff;
+  color: var(--hero-title-color);
 }
 /* ---------------------PORTFOLIO--------------------- */
 .filter-btn {
@@ -172,31 +188,34 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-title-color);
 }
 .btn {
-  background-color: #f5f4fa;
+  background-color: var(--team-bcg-color);
 }
 .btn:hover,
 .btn:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--hero-title-color);
 }
-.btn-accent {
-  background-color: #2196f3;
-  color: #ffffff;
+.btn-current {
+  background-color: var(--accent-color);
+  color: var(--hero-title-color);
+}
+.portfolio {
+  background-color: var(--main-bcg-color);
 }
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--main-title-color);
 }
 .portfolio-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--main-text-color);
 }
